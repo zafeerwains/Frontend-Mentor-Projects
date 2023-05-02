@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="js/script.js"></script>
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <main class="  p-1 p-sm-5 d-flex justify-content-center">
+        <div class="card border p-4  px-5 m-2 m-sm-5">
+            <div class="container p-2 py-4">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="heading m-0">DAY</p>
+                        <input type="number" placeholder="DD" id="daysInput" class="mb-3 form-control ">
+                        <p class="text-danger errorField" id="daysError"></p>
+                    </div>
+                    <div class="col-3">
+                        <p class="heading m-0">MONTH</p>
+                        <input type="number" placeholder="MM"id="monthsInput" class=" mb-3 form-control ">
+                        <p class="text-danger errorField" id="monthsError"></p>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <p class="heading m-0 ">YEAR</p>
+                        <input type="number" placeholder="YYYY"id="yearsInput" class="form-control mb-3">
+                        <p class="text-danger errorField" id="yearsError"></p>
+                    </div>
+                </div>
+                <div id="arrowInput">
+                    <hr />
+                    <div>
+                        <img src="/assets/icon-arrow.svg" onclick="calculateAge()" alt="Logo">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col  output "><span id="yearsOutput">- - </span> years</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col  output"><span id="monthsOutput">- - </span> months</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col  output"><span id="daysOutput">- - </span> days</div>
+                    </div>
+                </div>
+
+            </div>.
+        </div>
+    </main>
+</body>
+
+</html>

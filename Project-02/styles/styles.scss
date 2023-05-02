@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700;1,800&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 86%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    max-width: 700px;
+    border-radius: 15px 15px 140px 15px;
+}
+
+#monthsOutput,
+#daysOutput,
+#yearsOutput {
+    color: hsl(259, 100%, 65%);
+}
+
+.heading {
+    font-weight: 400i;
+}
+#arrowInput {
+    position: relative;
+  }
+#arrowInput div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: #864cff;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::placeholder {
+    font-weight: 700;
+}
+
+.output {
+    font-size: 60px;
+    font-weight: 800;
+}
