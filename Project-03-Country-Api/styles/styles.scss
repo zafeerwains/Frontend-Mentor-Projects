@@ -1,0 +1,31 @@
+$danger:hsl(200, 15%, 8%);
+$success: hsl(209, 23%, 22%);
+$light: hsl(0, 0%, 100%);
+$secondary: hsl(207, 26%, 17%);
+$primary: hsl(0, 0%, 98%);
+$info:hsl(0, 0%, 52%);
+@import url("https://fonts.google.com/specimen/Nunito+Sans");
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+#lightModeHTML{
+    display: none;
+}
+.headerFont {
+    font-weight: 600;
+}
+
+#lightModeHTML,
+#darkModeHTML {
+    cursor: pointer;
+}
+
+#imgFlag {
+    height: 200px;
+}
+
+.card {
+    font-size: 14px;
+}

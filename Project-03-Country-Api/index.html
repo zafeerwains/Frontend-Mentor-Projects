@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Country Api</title>
+</head>
+
+<body class="text-danger " id="mainChanges">
+    <header id="headerMode" class="shadow-lg">
+        <div class=" container-xxl py-4 p-1 p-sm-3  d-flex justify-content-between ">
+            <div class="mx-3 headerFont">Where in the World</div>
+            <div id="darkModeHTML">Dark Mode</div>
+            <div id="lightModeHTML">Light Mode</div>
+        </div>
+    </header>
+    <main id="mode" class="bg-primary">
+        <section id="allCountry">
+            <div class="container-xxl py-4 px-1 px-sm-3 d-sm-flex justify-content-between">
+                <div>
+                    <input type="text" class="form-control mx-0  mb-3 mb-sm-0 mx-sm-3" id="countryInput"
+                        placeholder="Search for country">
+                </div>
+                <div>
+                    <select id="optionContinent" class="form-control">
+                        <option value="">Select the Continent </option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Africa">Africa</option>
+                        <option value="South America">South America</option>
+                        <option value="North America">North America</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="Antarctica">Antarctica</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container-xxl">
+                <div class="row p-1 p-sm-3 " id="test">
+                </div>
+
+            </div>
+        </section>
+        <section style="display: none;" id="clickedCountry" class="">
+            <div class="container-xxl py-4  px-1 px-sm-3  text-danger">
+                <button class="btn bg-light px-3 p-2 " onclick="back()">Back</button>
+            </div>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-12 col-sm-6" id="imgC">
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <h2 class="fw-bolder" id="cname"></h2>
+                        <p>
+                        <h4>Native Name:</h4> <span id="nName"></span></p>
+                        <h4>Population:</h4> <span id="cPopulation"></span></p>
+                        <h4>Region:</h4> <span id="cRegion"></span></p>
+                        <h4>Sub Region:</h4> <span id="cSubRegion"></span></p>
+                        <h4>Capital:</h4> <span id="cCapital"></span></p>
+                    </div>
+
+                    <div class="col-12 col-sm-3"><br><br>
+                        <h4>Top Level Domain:</h4> <span id="cDomain"></span></p>
+                        <h4>Currencies:</h4> <span id="cCurrencies"></span></p>
+                        <h4>Language:</h4> <span id="cLanguage"></span></p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
