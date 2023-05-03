@@ -90,19 +90,17 @@ const showcountry = (ele) => {
             let arrDataLan = Object.values(arrData.languages);
             let languageString = "";
             for (let language in arrData.languages) {
-              languageString += arrData.languages[language].name + ", ";
+                languageString += arrData.languages[language].name + ", ";
             }
             languageString = languageString.substr(0, languageString.length - 2);
-             let borderCountriesString = [];
-           let currencyString = "";
-           if (arrData.currencies) {
-               Object.keys(arrData.currencies).forEach((currency) => {
-                   currencyString += arrData.currencies[currency].name + ", ";
-               });
-           }
+            let borderCountriesString = [];
+            let currencyString = "";
+            if (arrData.currencies) {
+                Object.keys(arrData.currencies).forEach((currency) => {
+                    currencyString += arrData.currencies[currency].name + ", ";
+                });
+            }
             currencyString = currencyString.substr(0, currencyString.length - 2);
-            console.log(arrData)
-            console.log(languageString)
             document.getElementById('cname').innerText = `${arrData.name.common}`;
             document.getElementById('cPopulation').innerText = `${arrData.population}`;
             document.getElementById('cRegion').innerText = `${arrData.region}`;
@@ -112,6 +110,5 @@ const showcountry = (ele) => {
             document.getElementById('cCurrencies').innerText = `${currencyString}`;
             document.getElementById('cLanguage').innerText = `${languageString}`;
             document.getElementById('imgC').innerHTML = `<img src="${arrData.flags.png}" style="width:100%;height:100%;"id="imgFlag" alt="Flag">`;
-            console.log(searchedCountry);
         });
 };
