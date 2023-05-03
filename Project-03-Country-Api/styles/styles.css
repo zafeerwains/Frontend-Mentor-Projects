@@ -10823,6 +10823,17 @@ textarea.form-control-lg {
   font-family: "Nunito Sans", sans-serif;
 }
 
+.darkPlaceHolder ::-moz-placeholder {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.darkPlaceHolder ::placeholder {
+  background-color: hsl(209, 23%, 22%);
+}
+.darkPlaceHolder #optionContinent {
+  background-color: hsl(209, 23%, 22%);
+}
+
 #lightModeHTML {
   display: none;
 }
@@ -10834,6 +10845,10 @@ textarea.form-control-lg {
 #lightModeHTML,
 #darkModeHTML {
   cursor: pointer;
+}
+
+#clickedCountry {
+  min-height: 100vh;
 }
 
 #imgFlag {

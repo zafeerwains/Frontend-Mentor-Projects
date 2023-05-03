@@ -5,8 +5,16 @@
         document.getElementById("darkModeHTML").style.display = "none"
         document.getElementById("lightModeHTML").style.display = "block"
         document.getElementById("mode").classList.add("bg-secondary")
+        document.getElementById("optionContinent").style.background = "hsl(209, 23%, 22%)"
+        document.getElementById("optionContinent").style.color = " hsl(0, 0%, 100%)"
+        document.getElementById("countryInput").classList.remove("bg-light")
+        document.getElementById("countryInput").classList.remove("text-success")
         document.getElementById("headerMode").classList.add("bg-success")
+        document.getElementById("countryInput").classList.add("bg-success")
+        document.getElementById("countryInput").classList.add("text-light")
         document.getElementById("mainChanges").classList.add("text-light")
+        document.getElementById("mainChanges").classList.add("text-light")
+
         let cards = document.getElementsByClassName("cardColor");
         for (let i = 0; i < cards.length; i++) {
             cards[i].classList.add("bg-success");
@@ -24,11 +32,11 @@
         for (let ar of arr) {
             document.getElementById("test").innerHTML +=
                 ` <div class="col-12  col-sm-6 col-md-4 col-lg-3" >
-                <div class="cardColor card my-2" id="show1" onclick="showcountry(this)"  style="max-width: 100%;" >
-                <img src="${ar.flags.png}" class="card-img-top" id="imgFlag" alt="Flag">
-                <div class="card-body">
-                <h3>${ar.name.common}</h3>
-                <p><span class="fw-bolder">Population:</span>${ar.population}</p>
+            <div class="cardColor card my-2" id="show1" onclick="showcountry(this)"  style="max-width: 100%;" >
+            <img src="${ar.flags.png}" class="card-img-top" id="imgFlag" alt="Flag">
+            <div class="card-body">
+            <h3>${ar.name.common}</h3>
+            <p><span class="fw-bolder">Population:</span>${ar.population}</p>
                 <p><span class="fw-bolder">Region:</span>${ar.continents}</p>
                 <p><span class="fw-bolder">Capital:</span>${ar.capital}</p>
                 </div>
@@ -37,6 +45,11 @@
         }
     }
     const lightMode = () => {
+
+        document.getElementById("back").style.color = "hsl(209, 23%, 22%)"
+        document.getElementById("back").style.background = " hsl(0, 0%, 100%)"
+        document.getElementById("optionContinent").style.color = "hsl(209, 23%, 22%)"
+        document.getElementById("optionContinent").style.background = " hsl(0, 0%, 100%)"
         document.getElementById("darkModeHTML").style.display = "block"
         document.getElementById("lightModeHTML").style.display = "none"
         document.getElementById("mode").classList.remove("bg-secondary")
@@ -48,6 +61,7 @@
         }
         document.getElementById("mode").classList.add("bg-primary")
         document.getElementById("headerMode").classList.add("bg-light")
+        document.getElementById("countryInput").classList.add("bg-light")
         document.getElementById("mainChanges").classList.add("text-danger")
         cards = document.getElementsByClassName("cardColor");
         for (let i = 0; i < cards.length; i++) {

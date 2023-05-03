@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://kit.fontawesome.com/9190463d1b.js" crossorigin="anonymous"></script>
     <title>Country Api</title>
 </head>
 
@@ -13,8 +14,8 @@
     <header id="headerMode" class="shadow-lg">
         <div class=" container-xxl py-4 p-1 p-sm-3  d-flex justify-content-between ">
             <div class="mx-3 headerFont">Where in the World</div>
-            <div id="darkModeHTML">Dark Mode</div>
-            <div id="lightModeHTML">Light Mode</div>
+            <div id="darkModeHTML">&#127774;Dark Mode</div>
+            <div id="lightModeHTML">&#127774;Light Mode</div>
         </div>
     </header>
     <main id="mode" class="bg-primary">
@@ -22,7 +23,7 @@
             <div class="container-xxl py-4 px-1 px-sm-3 d-sm-flex justify-content-between">
                 <div>
                     <input type="text" class="form-control mx-0  mb-3 mb-sm-0 mx-sm-3" id="countryInput"
-                        placeholder="Search for country">
+                        placeholder=" &#128269; Search for country">
                 </div>
                 <div>
                     <select id="optionContinent" class="form-control">
@@ -45,9 +46,9 @@
         </section>
         <section style="display: none;" id="clickedCountry" class="">
             <div class="container-xxl py-4  px-1 px-sm-3  text-danger">
-                <button class="btn bg-light px-3 p-2 " onclick="back()">Back</button>
+                <button class="btn bg-light px-3 p-2 " id="back" onclick="back()">Back</button>
             </div>
-            <div class="container-xxl">
+            <div class="container-xxl ">
                 <div class="row">
                     <div class="col-12 col-sm-6" id="imgC">
                     </div>
