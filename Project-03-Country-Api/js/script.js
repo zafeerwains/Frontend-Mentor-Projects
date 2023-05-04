@@ -32,8 +32,8 @@
         for (let ar of arr) {
             document.getElementById("test").innerHTML +=
                 ` <div class="col-12  col-sm-6 col-md-4 col-lg-3" >
-            <div class="cardColor card my-2" id="show1" onclick="showcountry(this)"  style="max-width: 100%;" >
-            <img src="${ar.flags.png}" class="card-img-top" id="imgFlag" alt="Flag">
+            <div class="cardColor card my-2 my-2 my-sm-4"  onclick="showcountry(this)"  style="max-width: 100%;" >
+            <img src="${ar.flags.png}" class="card-img-top"  alt="Flag">
             <div class="card-body">
             <h3>${ar.name.common}</h3>
             <p><span class="fw-bolder">Population:</span>${ar.population}</p>
@@ -77,6 +77,9 @@
         const countryInput = document.getElementById("optionContinent").value;
         const searchedCountry = countryData.filter((data) => data.continents[0].toLowerCase().includes(countryInput.toLocaleLowerCase()));
         showCard(searchedCountry);
+        if (document.getElementById("darkModeHTML").style.display === "none") {
+            darkMode()
+        }
     }
     showCard(countryData)
     const countryInput = document.getElementById("countryInput");
@@ -123,6 +126,6 @@ const showcountry = (ele) => {
             document.getElementById('cDomain').innerText = `${arrData.tld}`;
             document.getElementById('cCurrencies').innerText = `${currencyString}`;
             document.getElementById('cLanguage').innerText = `${languageString}`;
-            document.getElementById('imgC').innerHTML = `<img src="${arrData.flags.png}" style="width:100%;height:100%;"id="imgFlag" alt="Flag">`;
+            document.getElementById('imgC').innerHTML = `<img src="${arrData.flags.png}" id="imgFlag" style="width:100%;height:100%;" alt="Flag">`;
         });
 };
