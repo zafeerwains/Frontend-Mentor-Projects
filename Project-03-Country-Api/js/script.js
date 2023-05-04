@@ -33,7 +33,7 @@
             document.getElementById("test").innerHTML +=
                 ` <div class="col-12  col-sm-6 col-md-4 col-lg-3" >
             <div class="cardColor card my-2 my-2 my-sm-4"  onclick="showcountry(this)"  style="max-width: 100%;" >
-            <img src="${ar.flags.png}" class="card-img-top"  alt="Flag">
+            <img src="${ar.flags.png}" class="card-img-top imgHeight"  alt="Flag">
             <div class="card-body">
             <h3>${ar.name.common}</h3>
             <p><span class="fw-bolder">Population:</span>${ar.population}</p>
