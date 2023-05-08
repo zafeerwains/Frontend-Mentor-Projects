@@ -1,0 +1,25 @@
+$primary: hsl(30, 38%, 92%);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,900&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.cardStyle {
+    max-width: 80%;
+
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder 900;
+}
+img {
+    min-height: 100%;
+}
+
+@media only screen and (max-width: 675px) {
+    .cardStyle {
+        max-width: 100%;
+    }
+}
